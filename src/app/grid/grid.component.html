@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button>
+        <mat-icon>menu_book</mat-icon>
+    </button>
+    <h1>Grid Test</h1>
+</mat-toolbar>
+
+<mat-card>
+    <amdg-grid
+            [headings]="headings"
+            (responseEmit)="onResponse($event)"
+            [url]="url">
+    </amdg-grid>
+</mat-card>
+
+<router-outlet></router-outlet>
